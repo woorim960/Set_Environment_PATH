@@ -1,0 +1,16 @@
+{ 
+    "version": "0.2.0", 
+    "configurations": [ 
+        
+        { 
+            "type": "lldb", 
+            "request": "launch", 
+            "name": "set_env_path", 
+            "program": "${fileDirname}/${fileBasenameNoExtension}.out", 
+            "args": [], 
+            "preLaunchTask": "gcc build active file", 
+            "stdio": [null,null,null], 
+            "terminal": "integrated" 
+        } 
+   ]
+}

@@ -1,0 +1,8 @@
+{
+    "files.associations": {
+        "stdio.h": "c",
+        "stdlib.h": "c",
+        "env_param_struct.h": "c",
+        "init_header.h": "c"
+    }
+}

@@ -1,0 +1,50 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "shell",
+			"label": "C/C++: gcc build active file",
+			"command": "/usr/bin/gcc",
+			"args": [
+				"-g",
+				"${file}",
+				"${fileDirname}/function_set/crud_record/read_param.c",
+				"${fileDirname}/function_set/crud_record/write_param.c",
+				"${fileDirname}/function_set/crud_record/edit_param.c",
+				"${fileDirname}/function_set/crud_record/delete_param.c",
+				"${fileDirname}/function_set/exit_main.c",
+				"-o",
+				"${fileDirname}/${fileBasenameNoExtension}.out",
+
+				// 1. execute .out file
+				/*
+				"&&", // to join building and running of the file
+				"${fileDirname}/${fileBasenameNoExtension}.out",
+				*/
+
+				// 2. file input
+				/*
+				"<",
+				"${fileDirname}/sample_input.txt"
+				*/
+
+				// 3. file output
+				/*
+				">",
+				${fileDirname}/sample_output.txt"
+				*/
+			],
+			"options": {
+				"cwd": "/usr/bin"
+			},
+			"problemMatcher": [
+				"$gcc"
+			],
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			}
+
+		}
+	]
+}
