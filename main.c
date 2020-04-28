@@ -95,6 +95,10 @@ int main(int argc, char *argv[]) {
                 // 메인 함수 종료
                 exit_main(file);
                 break;
+            default:
+                puts("잘못된 입력입니다.\n프로그램을 종료합니다.");
+                exit(0);
+                break;
         }
     }
 
